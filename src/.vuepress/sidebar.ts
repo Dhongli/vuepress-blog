@@ -4,6 +4,13 @@ export default sidebar({
   "/": [
     "",
     {
+      text: "Java",
+      icon: "laptop-code",
+      prefix: "java/",
+      link: "java/",
+      children: "structure",
+    },
+    {
       text: "如何使用",
       icon: "laptop-code",
       prefix: "demo/",

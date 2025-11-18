@@ -7,15 +7,27 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
+    name: "Henry Dai",
     url: "https://mister-hope.com",
   },
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-
+  //docsRepo: 文档仓库地址，默认同主题选项中的 repo
+  // docsDir: 文档在仓库中的目录，默认为根目录
+  // docsBranch: 文档存放的分支，默认为 "main"
+  repo: "Dhongli/vuepress-blog",
   docsDir: "src",
+  docsBranch: "master",
+
+  // lastUpdated: 是否显示页面最后更新时间
+  // contributors: 是否显示页面贡献者，支持 content、meta 和 boolean
+  // editLink: 是否展示编辑此页链接
+  // changelog: 是否显示变更日志
+  contributors: true,
+  lastUpdated: true,
+  changelog: true,
+
 
   // 导航栏
   navbar,
@@ -29,7 +41,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "一个前端开发者",
+    description: "一个后端开发者",
     intro: "/intro.html",
     medias: {
       Baidu: "https://example.com",
@@ -74,15 +86,19 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
+        hint: "Password: 12345",
+        password: "12345",
+      },
+      "/demo/encrypt copy.html": {
+        hint: "Password: 12345",
+        password: "12345S",
       },
     },
   },
 
   // 多语言配置
   metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
+    editLink: "编辑此页",
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响

@@ -1,5 +1,5 @@
 ---
-title: Markdown 展示
+title: Markdown
 icon: fa6-brands:markdown
 order: 2
 category:
@@ -251,7 +251,14 @@ yarn add -D vuepress-theme-hope
 ```bash
 npm i -D vuepress-theme-hope
 ```
-
+@tab java
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+```
 :::
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/code/code-tabs.html)
