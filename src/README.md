@@ -11,7 +11,7 @@ projects:
   - icon: folder-open
     name: 项目名称
     desc: 项目详细描述
-    link: /demo/"
+    link: /demo/
 
   - icon: link
     name: 链接名称
