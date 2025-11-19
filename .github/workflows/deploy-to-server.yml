@@ -1,0 +1,41 @@
+name: 部署到腾讯云服务器
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: 安装依赖
+        run: |
+          corepack enable
+          npm ci
+
+      - name: 构建文档
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: npm run docs:build
+
+      - name: 部署到腾讯云服务器
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SOURCE: "src/.vuepress/dist/" # 关键修改：根据您的结构，源路径是 src/.vuepress/dist/
+          REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
+          REMOTE_USER: "root"
+          TARGET: ${{ secrets.DEPLOY_PATH }}
+          ARGS: "-avz --delete"
