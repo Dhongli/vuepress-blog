@@ -1,4 +1,17 @@
-# Linux 磁盘与文件系统管理
+---
+title: Linux 磁盘与文件系统管理
+cover: /assets/images/cover2.jpg
+icon: pen-to-square
+date: 2022-01-12
+category:
+  - 蔬菜
+tag:
+  - 红
+  - 圆
+star: true
+sticky: 1
+---
+
 # 硬盘接口
 
 常见的硬盘接口有：**IDE** 、**SATA**、**SAS**、**USB**、**SCSI**，其中 SATA 是目前的主流接口，IDE 则几乎不再使用。
