@@ -7,6 +7,8 @@ heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: Henry的摸鱼小栈
 heroFullScreen: true
 tagline: daydayup
+bgImage: /assets/images/7.jpg
+bgImageDark: /assets/images/7.jpg
 projects:
   - icon: folder-open
     name: 项目名称
