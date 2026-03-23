@@ -105,6 +105,10 @@ export default hopeTheme({
                 hint: "Password: 12345",
                 password: "12345S",
             },
+            "/linux/Linux磁盘与文件系统管理.html": {
+                // hint: "Password: 12345",
+                password: "ddd111222",
+            },
         },
     },
 
