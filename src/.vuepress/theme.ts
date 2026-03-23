@@ -59,6 +59,7 @@ export default hopeTheme({
   </div>
 `,
     displayFooter: true,
+    copyright: false,
 
     // 博客相关
     blog: {
