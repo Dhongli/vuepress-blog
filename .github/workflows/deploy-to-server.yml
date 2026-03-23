@@ -31,11 +31,13 @@ jobs:
         run: npm run docs:build
 
       - name: 部署到腾讯云服务器
-        uses: easingthemes/ssh-deploy@v2.1.5
-        env:
+        # 升级这个 Action 到最新版本
+        uses: easingthemes/ssh-deploy@v4.1.8  # 从 v2.1.5 升级到 v4.1.8
+        with:  # 注意：v4 版本参数格式有变化
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SOURCE: "src/.vuepress/dist/" # 关键修改：根据您的结构，源路径是 src/.vuepress/dist/
           REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
-          REMOTE_USER: "root"
+          REMOTE_USER: root
+          REMOTE_PORT: 22
+          SOURCE: src/.vuepress/dist/
           TARGET: ${{ secrets.DEPLOY_PATH }}
           ARGS: "-avz --delete"
