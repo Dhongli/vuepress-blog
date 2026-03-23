@@ -39,23 +39,13 @@ export default hopeTheme({
     footer: `
   <div style="
     text-align: center; 
-    padding: 20px; 
-    font-size: 13px; 
-    color: #8a8a8a;
+    padding: 20px 0; 
+    font-size: 12px; 
+    color: #666;
     border-top: 1px solid #eaecef;
-    margin-top: 40px;
+    line-height: 1.6;
   ">
-    <p style="margin: 5px 0;">
-      Copyright © ${new Date().getFullYear()} Henry Dai
-    </p>
-    <p style="margin: 5px 0;">
-      <a href="https://beian.miit.gov.cn" 
-         target="_blank" 
-         rel="noopener noreferrer"
-         style="color: #8a8a8a; text-decoration: none;">
-        陕ICP备2026005763号-1
-      </a>
-    </p>
+    陕ICP备2026005763号-1 | Henry Dai | Copyright © ${new Date().getFullYear()}
   </div>
 `,
     displayFooter: true,
