@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2  # 升级到最新版本
         with:
           fetch-depth: 0
 
       - name: 设置 Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.2.0  # 升级到最新版本
         with:
           node-version: 22
           cache: npm
@@ -31,9 +31,8 @@ jobs:
         run: npm run docs:build
 
       - name: 部署到腾讯云服务器
-        # 升级这个 Action 到最新版本
-        uses: easingthemes/ssh-deploy@v4.1.8  # 从 v2.1.5 升级到 v4.1.8
-        with:  # 注意：v4 版本参数格式有变化
+        uses: easingthemes/ssh-deploy@v4.1.8
+        with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
           REMOTE_USER: root
