@@ -33,7 +33,7 @@ jobs:
       - name: 部署到腾讯云服务器
         uses: easingthemes/ssh-deploy@v4.1.8
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.sshPrivateKey }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY  }}
           REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
           REMOTE_USER: root
           REMOTE_PORT: 22
