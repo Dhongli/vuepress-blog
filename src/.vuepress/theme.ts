@@ -36,7 +36,12 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: `
+    <div style="text-align: center; padding: 20px; font-size: 14px; color: #666;">
+      Copyright © ${new Date().getFullYear()} Henry Dai<br>
+      <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">陕ICP备2026005763号-1</a>
+    </div>
+  `,
   displayFooter: true,
 
   // 博客相关
