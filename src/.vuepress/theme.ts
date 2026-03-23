@@ -42,7 +42,7 @@ export default hopeTheme({
     padding: 20px 0; 
     font-size: 12px; 
     color: #666;
-    border-top: 1px solid #eaecef;
+    /*border-top: 1px solid #eaecef;*/
     line-height: 1.6;
   ">
     陕ICP备2026005763号-1 | Henry Dai | Copyright © ${new Date().getFullYear()}
