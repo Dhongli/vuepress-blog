@@ -21,7 +21,6 @@ export default navbar([
       },
       {
         text: "Reactor",
-        icon: "pen-to-square",
         prefix: "reactor/",
         link: "reactor/",
         children: [

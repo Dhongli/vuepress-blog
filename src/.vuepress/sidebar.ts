@@ -28,7 +28,10 @@ export default sidebar({
           icon: "laptop-code",
           prefix: "reactor/",
           link: "reactor/",
-          children: "structure",
+          children: [
+            { text: "第一章 初识响应式编程", icon: "pen-to-square", link: "01-intro" },
+            { text: "第二章 Flux 与 Mono 基础", icon: "pen-to-square", link: "02-flux-mono" }
+          ]
         },
       ],
     },
