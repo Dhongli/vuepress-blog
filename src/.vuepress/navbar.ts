@@ -2,7 +2,31 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/java/",
+  {
+    text: "Java",
+    icon: "pen-to-square",
+    prefix: "/java/",
+    children: [
+      {
+        text: "Spring",
+        icon: "pen-to-square",
+        prefix: "spring/",
+        link: "spring/",
+      },
+      {
+        text: "SpringBoot",
+        icon: "pen-to-square",
+        prefix: "springboot/",
+        link: "springboot/",
+      },
+      {
+        text: "Reactor",
+        icon: "pen-to-square",
+        prefix: "reactor/",
+        link: "reactor/",
+      },
+    ],
+  },
   "/interview/",
   "/algorithm/",
   "/front-end/",

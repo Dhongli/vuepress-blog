@@ -22,7 +22,14 @@ export default sidebar({
           icon: "laptop-code",
           prefix: "springboot/",
           link: "springboot/",
-        }
+        },
+        {
+          text: "Reactor",
+          icon: "laptop-code",
+          prefix: "reactor/",
+          link: "reactor/",
+          children: "structure",
+        },
       ],
     },
     {
