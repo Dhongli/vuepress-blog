@@ -106,7 +106,11 @@ export default hopeTheme({
                 password: "12345S",
             },
             "/linux/Linux磁盘与文件系统管理.html": {
-                // hint: "Password: 12345",
+                hint: "",
+                password: "ddd111222",
+            },
+            "/java/Reactor/09-WebSearchReactAgent_分析笔记.html": {
+                hint: "",
                 password: "ddd111222",
             },
         },
