@@ -109,7 +109,7 @@ export default hopeTheme({
                 hint: "",
                 password: "ddd111222",
             },
-            "/java/Reactor/09-WebSearchReactAgent_分析笔记.html": {
+            "/java/reactor/09-WebSearchReactAgent_分析笔记.html": {
                 hint: "",
                 password: "ddd111222",
             },
