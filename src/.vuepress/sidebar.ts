@@ -36,7 +36,8 @@ export default sidebar({
             { text: "第五章 Sinks.Many - 手动控制数据流", icon: "pen-to-square", link: "05-sinks" },
             { text: "第六章 第六章：错误处理与资源清理", icon: "pen-to-square", link: "06-error-handling" },
             { text: "第七章 背压处理 - 让快慢匹配", icon: "pen-to-square", link: "07-backpressure" },
-            { text: "第八章 Spring 集成与项目实战", icon: "pen-to-square", link: "08-spring-integration" }
+            { text: "第八章 Spring 集成与项目实战", icon: "pen-to-square", link: "08-spring-integration" },
+            { text: "第九章 WebSearchReactAgent_分析笔记", icon: "pen-to-square", link: "09-WebSearchReactAgent_分析笔记" }
           ]
         },
       ],
